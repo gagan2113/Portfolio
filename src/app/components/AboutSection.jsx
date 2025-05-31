@@ -7,8 +7,7 @@ const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
-    content: (
-      <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 list-none pl-0">
+    content: (      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 sm:gap-4 list-none pl-0">
         <li>Python</li>
         <li>SQL</li>
         <li>Power BI</li>
@@ -57,12 +56,11 @@ const AboutSection = () => {
     });
   };
 
-  return (
-    <section className="text-white" id="about">
+  return (    <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         {/* Using <video> instead of <Image> */}
         <video
-          className="w-full rounded-lg"
+          className="w-full rounded-lg max-w-md mx-auto md:max-w-none"
           autoPlay
           loop
           muted
@@ -74,8 +72,7 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
           I am a Data Analyst passionate about turning raw data into actionable insights to drive informed business decisions. My expertise includes Python, SQL, Excel, Tableau, Power BI, and Qlik Sense. I specialize in data cleaning, analysis, and visualization using libraries like Pandas, NumPy, Matplotlib, Seaborn, and Plotly. I have hands-on experience in automating workflows, building interactive dashboards, and generating meaningful reports. I also leverage GitHub, Jira, and prompt engineering to streamline analytics processes and deliver scalable business intelligence solutions.
             <br />
-          </p>
-          <div className="flex flex-row justify-start mt-8">
+          </p>          <div className="flex flex-row justify-start mt-8 flex-wrap gap-2">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
               Skills
             </TabButton>

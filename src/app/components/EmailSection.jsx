@@ -11,29 +11,28 @@ import phoneicon from "../../../public/phone1.svg";
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  return (
-    <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
+  return (    <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           I&apos;m currently looking for new opportunities, my inbox is always open. Whether you
           have a question or just want to say hi, I&apos;ll try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 flex-wrap justify-center md:justify-start">
           <Link href="https://github.com/gagan2113">
-            <Image src={GithubIcon} alt="Github Icon" width={47} height={47} className="w-12 h-12 object-contain" />
+            <Image src={GithubIcon} alt="Github Icon" width={47} height={47} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
           </Link>
           <Link href="https://www.linkedin.com/in/gagan34/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" width={47} height={47} className="w-12 h-12 object-contain" />
+            <Image src={LinkedinIcon} alt="Linkedin Icon" width={47} height={47} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
           </Link>
           <Link href="/" target="_blank">
-            <Image src={twitterIcon} alt="Twitter Icon" width={47} height={47} className="w-12 h-12 object-contain" />
+            <Image src={twitterIcon} alt="Twitter Icon" width={47} height={47} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
           </Link>
           <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=gaganverma5131@gmail.com" target="_blank" rel="noopener noreferrer">
-            <Image src={gmailicon} alt="Email Icon" width={48} height={60} className="w-12 h-14 object-contain" />
+            <Image src={gmailicon} alt="Email Icon" width={48} height={60} className="w-10 h-12 sm:w-12 sm:h-14 object-contain" />
           </Link>
           <Link href="tel:+919893010159">
-            <Image src={phoneicon} alt="Call Icon" width={48} height={60} className="w-12 h-14 object-contain" />
+            <Image src={phoneicon} alt="Call Icon" width={48} height={60} className="w-10 h-12 sm:w-12 sm:h-14 object-contain" />
           </Link>
         </div>
       </div>
